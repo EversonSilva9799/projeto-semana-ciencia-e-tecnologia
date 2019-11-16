@@ -1,0 +1,59 @@
+<section class="container">
+  <section *ngIf="erro" class="box-erro">
+    <p >{{ messagemErro }}</p>
+  </section>
+  <ul class="box-postagens" *ngIf="this.postagens !== undefined">
+    <li class="postagem" *ngFor="let postagem of this.postagens">
+      <div class="info">
+        <div class="info-usuario">
+          <img src="../../assets/perfil.png">
+          <span>{{ postagem.autor }}</span>
+        </div>
+
+        <div class="info-mais">
+          <span (click)= "deletePostagem(postagem)">x</span>
+        </div>
+      </div>
+
+      <div class="box-img">
+        <img src="{{this.url}}/{{postagem.imagem}}">
+      </div>
+
+      <div class="box-content-icons">
+        <div class="buttons-postagem">
+          <button class="button-gostei"></button>
+          <button class="button-comentar"></button>
+          <button class="button-compartilhar"></button>
+        </div>
+        <div>
+          <button class="button-salvar"></button>
+        </div>
+      </div>
+
+      <div class="box-postagens-comentarios">
+        <p class="destaque total-visualizacoes">217.911 visualizações</p>
+
+        <p class="descricao-postagem"><span class="destaque">{{ postagem.autor }}</span>
+        {{ postagem.legenda }} <a href="#">#instagram</a>  <a href="#">#secitex</a>  <a href="#"> #semanacienciaetecnologia</a></p>
+
+       <p class="ver-todos-comentarios">Ver todos os 1.001 comentários</p>
+
+       <div class="box-comentarios">
+        <p><span class="destaque">bruno</span> Beleza🙌🙌🙌🌹🌹🌹🔥🔥🔥</p>
+        <p><span class="destaque">camila</span> Aiiiiiiiiiiiii👶🏽</p>
+       </div>
+      </div>
+    </li>
+  </ul>
+
+  <div *ngIf="this.postagens !== undefined">
+    <div *ngIf="this.postagens.length === 0" class="info-vazio">
+      <p>Nada Aqui :(</p>
+    </div>
+  </div>
+
+</section>
+
+
+
+

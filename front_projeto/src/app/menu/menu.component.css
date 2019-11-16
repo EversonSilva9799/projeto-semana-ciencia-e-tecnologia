@@ -1,0 +1,129 @@
+.header {
+	padding: 25px 10px 25px 10px;
+	background-color: #ffffff;
+	border-bottom: 1.4px solid #eeeded;
+}
+
+.logo {
+	display: flex;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.img-logo-camera {
+	width: 24px;
+	height: 24px;
+	background-image: url("../../assets/icons.png");
+	background-position-x: -94px;
+	background-position-y: -98px;
+	margin-right: 35px;
+}
+
+.img-logo-camera::after {
+	content: "";
+	display: block;
+	background-color: #000;
+	width: 1px;
+	height: 100%;
+	margin-left: 40px;
+}
+
+.box-icons-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.campo-busca input {
+	width: 215px;
+	height: 30px;
+	font-size: 0.9em;
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: 500;
+	border: 1px solid #eeeded;
+	border-radius: 3px;
+	padding-left: 15px;
+	padding-right: 5px;
+	background-color: rgb(250, 250, 250);
+}
+
+.campo-busca > input::after {
+	content: "";
+	display: block;
+	width: 300px;
+	height: 100px;
+	background-color: red;
+	color: red;
+	border: 1px solid #000;
+}
+
+.campo-busca input::-webkit-input-placeholder::before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-image: url("../../assets/icons.png");
+	background-position-x: -387px;
+	background-position-y: -337px;
+}
+
+.campo-busca input::-webkit-input-placeholder {
+	color: rgba(88, 88, 88, 0.4);
+	font-weight: 600 !important;
+	text-align: center;
+}
+
+.campo-busca input::-moz-placeholder {
+	color: rgba(88, 88, 88, 0.4);
+	font-weight: 600 !important;
+	text-align: center;
+}
+
+.campo-busca input:focus {
+	background-color: rgb(255, 255, 255);
+}
+
+.campo-busca input:focus::-webkit-input-placeholder {
+	text-align: left;
+}
+
+.campo-busca input::-moz-placeholder:focus {
+	text-align: left;
+}
+
+/* .campo-busca input::-webkit-search-cancel-button {
+
+} */
+
+.box-icons-header .icon-coracao,
+.box-icons-header .icon-usuario,
+.box-icons-header .icon-compartilhar {
+	background-color: transparent;
+	border: none;
+	width: 24px;
+	height: 24px;
+	background-image: url("../../assets/icons.png");
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.box-icons-header .icon-compartilhar {
+	background-position-x: -260px;
+	background-position-y: -292px;
+}
+
+.box-icons-header .icon-coracao {
+	background-position-x: -339px;
+	background-position-y: -258px;
+}
+
+.box-icons-header .icon-usuario {
+	background-position-x: -338px;
+	background-position-y: -318px;
+}
+
+@media only screen and (max-width: 700px) {
+	.campo-busca {
+		display: none;
+	}
+}

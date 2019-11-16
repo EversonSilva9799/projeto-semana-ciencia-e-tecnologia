@@ -1,0 +1,26 @@
+<label *ngIf="!this.imagem" (click)="tirarFoto()" for="take-picture" class="btn-foto">Selecionar/Tirar Foto</label>
+<input #inputFile type="file" id="take-picture" accept="image/*">
+
+<div class="box-compartilhamento" [hidden]="!this.imagem">
+  <form class="nome-autor">
+    <input #descricao [(ngModel)]="autor" type="text" name="autor" placeholder="Adicione seu nome">
+  </form>
+  <img #imagemHTML class="preview-imagem" src="">
+  <img *ngIf="this.initPreview" src="https://cdn.dribbble.com/users/3337757/screenshots/6825268/076_-loading_animated_dribbble_copy.gif">
+
+  <form class="descricao">
+    <input [(ngModel)]="legenda" #descricao type="text" name="descricao" placeholder="Clique para adicionar uma legenda">
+  </form>
+
+  <div class="btn-acoes">
+    <button (click)="publicar()" class="btn">Publicar</button>
+    <button (click)="cancelar()" class="btn">Cancelar</button>
+  </div>
+<div>
+
+
+
+
+
+
+
