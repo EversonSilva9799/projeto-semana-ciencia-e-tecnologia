@@ -33,7 +33,7 @@ export class PostComponent {
 		});
 	}
 	public deletePostagem(postagem: Postagem) {
-		this.postagemService.DeletePostagem(postagem.id).subscribe((data) => {
+		this.postagemService.DeletePostagem(1).subscribe((data) => {
 			console.log(data.status);
 			if (!data.status) {
 				this.messagemErro = 'Não foi possível excluir';
