@@ -68,9 +68,6 @@ CREATE TABLE `tbpost` (
 -- Extraindo dados da tabela `tbpost`
 --
 
-INSERT INTO `tbpost` (`id`, `autor`, `legenda`, `imagem`, `uniqueStore`) VALUES
-(314, 'everson', 'Boa noite', '1574093256906137287085.jpg', '15740932803861574093280386');
-
 --
 -- Indexes for dumped tables
 --
