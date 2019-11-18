@@ -18,7 +18,7 @@
 > Importar o arquivo instagramclone.sql para sua base de dados
 
 - Back-end
-> 1 - Clonar projeto
+> 1 - Clonar projeto &nbsp;
 > 2 - entrar no diretório back e executar npm install
 > 3 - alterar credenciais de banco de dados em src/database/connection.js
 > 4 - executar nodemon src/index
