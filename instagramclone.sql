@@ -65,7 +65,10 @@ CREATE TABLE `tbpost` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f5b8367e1c8581c8a035eefd87aa3e64ad79230
 --
 -- Indexes for dumped tables
 --
