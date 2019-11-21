@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { PostagemService } from '../services/postagem.service';
+import { PostagemService } from '../../services/postagem.service';
 
 @Component({
 	selector: 'app-camera',

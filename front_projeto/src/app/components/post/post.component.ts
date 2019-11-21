@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../../services/api.service';
+import { PostagemService } from '../../services/postagem.service';
+import { WebsocketService } from '../../services/websocket.service';
 import Postagem from '../models/Postagem';
-import { ApiService } from '../services/api.service';
-import { PostagemService } from '../services/postagem.service';
-import { WebsocketService } from '../services/websocket.service';
 
 @Component({
 	selector: 'app-post',

@@ -13,7 +13,7 @@
 .img-logo-camera {
 	width: 24px;
 	height: 24px;
-	background-image: url("../../assets/icons.png");
+	background-image: url("../../../assets/icons.png");
 	background-position-x: -94px;
 	background-position-y: -98px;
 	margin-right: 35px;
@@ -62,7 +62,7 @@
 	display: block;
 	width: 24px;
 	height: 24px;
-	background-image: url("../../assets/icons.png");
+	background-image: url("../../../assets/icons.png");
 	background-position-x: -387px;
 	background-position-y: -337px;
 }
@@ -102,7 +102,7 @@
 	border: none;
 	width: 24px;
 	height: 24px;
-	background-image: url("../../assets/icons.png");
+	background-image: url("../../../assets/icons.png");
 	margin-left: 30px;
 	cursor: pointer;
 }

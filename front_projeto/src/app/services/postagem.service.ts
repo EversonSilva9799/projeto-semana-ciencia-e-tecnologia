@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import Postagem from '../models/Postagem';
+import Postagem from '../components/models/Postagem';
 import { ApiService } from './api.service';
 
 @Injectable({
