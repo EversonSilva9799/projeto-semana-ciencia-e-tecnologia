@@ -42,6 +42,7 @@ export class CameraComponent implements OnInit {
 
 	public publicar() {
 		const dataSend = new FormData();
+		const hashtags = this.legenda.match(/#\w+/gim);
 
 		if (this.autor && this.legenda) {
 			this.autor = this.autor.toLocaleLowerCase().replace(/\s/g, '');
